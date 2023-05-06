@@ -1,7 +1,5 @@
 # YouTube Comments Sentiment Analysis using BERT
 
-![YouTube Comments Sentiment Analysis](youtube_comments_sentiment_analysis.png)
-
 This project provides a sentiment analysis tool for YouTube comments using BERT (Bidirectional Encoder Representations from Transformers). It allows you to analyze the sentiment (positive, negative, or neutral) of comments on YouTube videos using state-of-the-art natural language processing models.
 
 ## Table of Contents
