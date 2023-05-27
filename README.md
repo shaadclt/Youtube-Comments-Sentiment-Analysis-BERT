@@ -1,6 +1,6 @@
 # YouTube Comments Sentiment Analysis using BERT
 
-This project provides a sentiment analysis tool for YouTube comments using BERT (Bidirectional Encoder Representations from Transformers). It allows you to analyze the sentiment (positive, negative, or neutral) of comments on YouTube videos using state-of-the-art natural language processing models.
+This project provides a sentiment analysis tool for YouTube comments using BERT (Bidirectional Encoder Representations from Transformers). It allows you to analyze the sentiment of comments on a scale of 1 to 5 on YouTube videos using state-of-the-art natural language processing models.
 
 ## Table of Contents
 
@@ -19,17 +19,15 @@ The YouTube Comments Sentiment Analysis project leverages BERT, a powerful trans
 
 The project follows these steps to analyze the sentiment of YouTube comments:
 
-1. **Data Collection**: The YouTube API is used to retrieve comments from a specified YouTube video. The comments are extracted and stored for analysis.
+1. **Data Collection**: Selenium is used to retrieve comments from a specified YouTube video. The comments are extracted and stored for analysis.
 
-2. **Preprocessing**: The collected comments undergo preprocessing steps, such as removing unwanted characters, stopwords, and URLs, as well as tokenization and padding.
-
-3. **Model Loading**: A pre-trained BERT model, fine-tuned for sentiment analysis, is loaded. This model has been trained on labeled sentiment analysis datasets to learn to classify sentiment accurately.
+2. **Model Loading**: A pre-trained BERT model, fine-tuned for sentiment analysis, is loaded. This model has been trained on labeled sentiment analysis datasets to learn to classify sentiment accurately.
 
 4. **Encoding**: The preprocessed comments are encoded into numerical representations using the BERT tokenizer.
 
-5. **Sentiment Classification**: The encoded comments are fed into the loaded BERT model to classify the sentiment as positive, negative, or neutral.
+5. **Sentiment Classification**: The encoded comments are fed into the loaded BERT model to classify the sentiment on a scale of 1 to 5.
 
-6. **Output**: The sentiment analysis results are generated, indicating the sentiment of each comment.
+6. **Output**: The sentiment analysis results are generated, indicating the overall sentiment score of the comments.
 
 ## Setup
 
@@ -47,27 +45,17 @@ git clone https://github.com/your-username/youtube-comments-sentiment-analysis.g
 pip install -r requirements.txt
 ```
 
-3. Obtain a YouTube API key by following the instructions provided by the YouTube API documentation.
-
-4. Update the API key and other necessary configurations in the project files.
-
 ## Usage
 
-To perform sentiment analysis on YouTube comments using BERT, follow these steps:
+1. Run the `main.py` script:
 
-1. Import the necessary classes and functions from the project files into your Python script.
+```
+python main.py
+```
 
-2. Provide the YouTube video URL or video ID to retrieve comments from that specific video.
+2. Paste the desired Youtube video URL.
 
-3. Use the provided functions to collect and preprocess the comments.
-
-4. Load the pre-trained BERT sentiment analysis model.
-
-5. Encode the preprocessed comments using the BERT tokenizer.
-
-6. Feed the encoded comments into the loaded BERT model to classify the sentiment.
-
-7. Receive the sentiment analysis results and utilize them for further analysis or display.
+3. The sentiment score will be displayed on the screen. 
 
 Feel free to customize the sentiment analysis tool according to your specific requirements, such as integrating it into a web application or incorporating additional features.
 
