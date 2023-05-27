@@ -47,10 +47,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the `main.py` script:
+1. Run the `app.py` script:
 
 ```
-python main.py
+python app.py
 ```
 
 2. Paste the desired Youtube video URL.
