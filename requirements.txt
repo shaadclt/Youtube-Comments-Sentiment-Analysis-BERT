@@ -1,6 +1,6 @@
 torch
 selenium
 transformers
-flask
+streamlit
 pandas
 gunicorn
