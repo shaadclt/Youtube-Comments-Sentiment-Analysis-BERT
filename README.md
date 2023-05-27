@@ -47,10 +47,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the `app.py` script:
+1. Run the `streamlit_app.py` script:
 
 ```
-python app.py
+streamlit streamlit_app.py
 ```
 
 2. Paste the desired Youtube video URL.
