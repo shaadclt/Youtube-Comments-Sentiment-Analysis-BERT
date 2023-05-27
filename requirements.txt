@@ -1,5 +1,4 @@
 torch
-selenium
 transformers
 streamlit
 pandas
